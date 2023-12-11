@@ -105,10 +105,9 @@ public class GoalManager
             Console.WriteLine("\nThe list has been saved.");           
         }
     }
-    public void LoadGoals()
+    public void LoadGoals(string fileName)
     {
-        string filename = "myGoals";
-        string[] lines = System.IO.File.ReadAllLines(filename);
+        string[] lines = System.IO.File.ReadAllLines(fileName);
 
         foreach (string line in lines)
         {

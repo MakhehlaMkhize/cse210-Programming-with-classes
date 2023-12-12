@@ -31,8 +31,12 @@ class Program
                 goalManager.SaveGoals(fileName);
             }
             else if (userInput == 4)
-            {
-                goalManager.LoadGoals();
+            {   
+                Console.WriteLine("What is the name of the file you would like to load?");
+                
+                string fileName = Console.ReadLine();
+
+                goalManager.LoadGoals(fileName);
             }
             else if (userInput ==5)
             {
